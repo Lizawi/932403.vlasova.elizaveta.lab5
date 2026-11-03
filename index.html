@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Власова Елизавета- О себе</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+  footer {
+    font-family: Georgia, serif;
+    color: #f0e6d2;
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>Власова Елизавета</h1>
+    <p>Историк и реконструктор</p>
+    <button id="themeBtn">Сменить тему</button>
+  </header>
+
+  <nav>
+    <a href="#skills">Навыки</a>
+    <a href="#projects">Проекты</a>
+    <a href="#epochs">Эпохи</a>
+    <a href="#artifacts">Артефакты</a>
+    <a href="#timeline">Хронология</a>
+  </nav>
+
+  <main>
+    <figure>
+    <img src="images/map.jpg" alt="Карта" width="150" height="150" style="filter: sepia(0.5);">
+    </figure>
+
+    <section id="skills">
+      <h2>Навыки</h2>
+      <ul>
+        <li>Работа с архивными документами</li>
+        <li>Реконструкция исторических костюмов</li>
+        <li>Создание исторических карт</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Проекты</h2>
+      <ol>
+        <li>Реконструкция костюма Древней Руси</li>
+        <li>Карта торговых путей Средневековья</li>
+        <li>Доспехи рыцаря эпохи Крестовых походов</li>
+      </ol>
+    </section>
+
+    <section id="epochs">
+      <h2>Исторические эпохи</h2>
+      <div class="card-list">
+        <article class="card">
+          <img src="images/Древняя%20Русь.jpg" alt="Древняя Русь" width="150" height="100">
+          <h3><time datetime="0900">IX–XII века</time></h3>
+          <p>Древняя Русь: принятие христианства, торговые пути «из варяг в греки»</p>
+        </article>
+        <article class="card">
+          <img src="images/Средневековье.jpg" alt="Средневековье" width="150" height="100">
+          <h3><time datetime="1200">XII–XV века</time></h3>
+          <p>Средневековье: расцвет торговых путей, развитие городов</p>
+        </article>
+        <article class="card">
+          <img src="images/Крестовые%20походы.jpg" alt="Крестовые походы" width="150" height="100">
+          <h3><time datetime="1200">XIII век</time></h3>
+          <p>Крестовые походы: рыцарские доспехи и военные традиции</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="artifacts">
+      <h2>Артефакты музея</h2>
+      <div class="artifact-grid">
+        <figure class="artifact">
+          <img src="images/Костюм%20Древней%20Руси.jpg" alt="Костюм Древней Руси" width="120" height="120">
+          <figcaption>Костюм Древней Руси, <time datetime="1000">X век</time></figcaption>
+        </figure>
+        <figure class="artifact">
+          <img src="images/Карта%20торговых%20путей.jpg" alt="Карта торговых путей" width="120" height="120">
+          <figcaption>Карта торговых путей, <time datetime="1300">XIV век</time></figcaption>
+        </figure>
+        <figure class="artifact">
+          <img src="images/Доспехи%20рыцаря.jpg" alt="Доспехи рыцаря" width="120" height="120">
+          <figcaption>Доспехи рыцаря, <time datetime="1250">XIII век</time></figcaption>
+        </figure>
+        <figure class="artifact">
+          <img src="images/Меч%20реконструктора.jpg" alt="Меч реконструктора" width="120" height="120">
+          <figcaption>Меч, <time datetime="1200">XII век</time></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="timeline">
+      <h2>Хронология событий</h2>
+      <button id="addEventBtn">Добавить событие</button>
+      <button id="toggleBtn">Свернуть хронологию</button>
+      <div class="timeline-list"></div>
+    </section>
+
+  </main>
+
+  <aside>
+      <h2>Любимая эпоха</h2>
+      <p>Древняя Русь</p>
+    </aside>
+
+  <form action="#" method="post">
+    <h2>Обратная связь</h2>
+
+    <label for="name">Имя</label><br>
+    <input type="text" id="name" name="name" placeholder="Введите ваше имя"><br><br>
+
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email" placeholder="Введите ваш email"><br><br>
+
+    <label for="message">Сообщение</label><br>
+    <textarea id="message" name="message" placeholder="Введите ваше сообщение"></textarea><br><br>
+
+    <button type="submit">Отправить</button>
+  </form>
+
+  <footer>
+    <p>&copy; 2026 <a href="#">Власова Елизавета</a></p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
